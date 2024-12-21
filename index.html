@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>чо смотришь, жмякай давай)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-message">
+    <h1>Привет, любимая!</h1>
+    <p>Я подготовил для тебя небольшой тест, чтобы показать, как я ценю твои вкусы)</p>
+    <button id="start-btn" onclick="startTest()">Начать тест</button>
+  </div>
+
+  <div id="question-container" style="display: none;">
+    <div id="question-text">Выбери котика</div>
+    <div id="choices">
+      <div class="choice" onclick="checkAnswer('cat')">
+        <img src="cat.jpg" alt="Котик" class="choice-img">
+      </div>
+      <div class="choice" onclick="checkAnswer('dog')">
+        <img src="dog.jpg" alt="Собака" class="choice-img">
+      </div>
+      <div class="choice" onclick="checkAnswer('cow')">
+        <img src="cow.jpg" alt="Коровка" class="choice-img">
+      </div>
+      <div class="choice" onclick="checkAnswer('lion')">
+        <img src="lion.jpg" alt="Лев" class="choice-img">
+      </div>
+    </div>
+  </div>
+
+  <div id="final-message">
+    <div>Вот эти все правильные ответы, ассоциируются у меня с тобой, любимая. Я уважаю твои вкусы и предпочтения, как и тебя саму. Люблю тебя, солнышко!</div>
+    <div>
+      <img src="cat.jpg" alt="Котик">
+      <img src="mendi.jpg" alt="Менди">
+      <img src="mayot.jpg" alt="Майот">
+      <img src="volleyball.jpg" alt="Волейбол">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
