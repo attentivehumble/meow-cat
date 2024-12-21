@@ -63,8 +63,8 @@ body {
 }
 
 .choice-img {
-  width: 100px;
-  height: 100px;
+  width: 80%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.2s;
@@ -89,10 +89,18 @@ body {
   text-align: center;
 }
 
+#final-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
 #final-message img {
-  width: 23%;
-  margin: 5px;
-  display: inline-block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .snowflake {
@@ -109,4 +117,24 @@ body {
 @keyframes fall {
   0% { top: -10px; transform: translateX(0); }
   100% { top: 100vh; transform: translateX(calc(10vw * (random - 0.5))); }
+}
+
+@media (max-width: 600px) {
+  #question-text {
+    font-size: 18px;
+  }
+
+  .choice-img {
+    width: 60%;
+    height: auto;
+  }
+
+  #final-message {
+    width: 90%;
+  }
+
+  #final-images img {
+    width: 45%;
+    height: auto;
+  }
 }
